@@ -23,5 +23,5 @@ OR
  var bank = require('bank.js').Bank
  
  ```
- then create your instance from their.
+
 
