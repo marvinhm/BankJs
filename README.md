@@ -11,7 +11,7 @@
 * Data can be kept in memory (it doesn't need to be stored to a database or anything).
 * Account balance printing
 
-#### Usage
+### Usage
 
 Either load the path in a browser: /[relative_path_to_your_machine]/BankJs/index.html
 
