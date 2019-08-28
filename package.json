@@ -1,0 +1,13 @@
+{
+  "name": "BankJs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "git@github.com:marvinhm/BankJs.git",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

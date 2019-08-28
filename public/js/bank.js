@@ -3,7 +3,7 @@
       this.balance_amount = 0;
       this.transactionsArray = [];
       this.transaction = '';
-      this.date = new Date('14 Jan 2012 00:00:00 GMT').getDate() + '/' + new Date('14 Jan 2012 00:00:00 GMT').getMonth()+1  + '/' + new Date('14 Jan 2012 00:00:00 GMT').getFullYear();
+      this.date = new Date().getDate() + '/' + (new Date().getMonth()+1)  + '/' + new Date().getFullYear();
   }
 
   Bank.prototype.showBalance = function() {
@@ -15,14 +15,14 @@
   };
 
   Bank.prototype.statement = function() {
-    return 'date || credit || debit || balance\n' + this.currentTransaction();
+    return 'date || credit || debit || balance' + "\n" + this.readTransactions().join('\n');
   }
 
   Bank.prototype.currentTransaction = function() {
     return this.transaction;
   }
 
-  Bank.prototype.setTransaction = function(amount, balance , date = new Date) {
+  Bank.prototype.setTransaction = function(amount, balance) {
     this.transaction = this.date + " || " + amount + " || " + balance;
     return this.transaction;
   }

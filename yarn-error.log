@@ -1,0 +1,32 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/student/.rvm/bin:/Users/student/.rvm/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, rmdir '/Users/student/Projects/exercises/BankJs/node_modules/.bin'
+
+npm manifest: 
+  {
+    "name": "BankJs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:marvinhm/BankJs.git",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
