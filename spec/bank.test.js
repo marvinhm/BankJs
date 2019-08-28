@@ -39,7 +39,8 @@ describe('Notes', () => {
         test('should set the current transaction', () => {
             var account = new bank();
             account.setTransaction(10, 50);
-            expect(account.currentTransaction()).toEqual('14/01/2012 || 10 || 50')
+            date = new Date().getDate() + '/' + (new Date().getMonth()+1)  + '/' + new Date().getFullYear()
+            expect(account.currentTransaction()).toEqual(date +' || 10 || 50')
         });
     })
 
@@ -48,19 +49,22 @@ describe('Notes', () => {
             var account = new bank();
             account.setTransaction(10, 50);
             account.addTransaction();
-            expect(account.readTransactions()).toEqual(['14/01/2012 || 10 || 50'])
+            date = new Date().getDate() + '/' + (new Date().getMonth()+1)  + '/' + new Date().getFullYear()
+            expect(account.readTransactions()).toEqual([date + ' || 10 || 50'])
         });
 
         test('after a transaction(i.e depositing money ) the trasactions array should be populated', () => {
             var account = new bank();
             account.deposit(100);
-            expect(account.readTransactions()).toEqual(['14/01/2012 || 100 || 100']);
+            date = new Date().getDate() + '/' + (new Date().getMonth()+1)  + '/' + new Date().getFullYear()
+            expect(account.readTransactions()).toEqual([date + ' || 100 || 100']);
         });
 
         test('after a transaction(i.e depositing money ) the trasactions array should be populated', () => {
             var account = new bank();
             account.withdraw(100);
-            expect(account.readTransactions()).toEqual(['14/01/2012 || 100 || -100']);
+            date = new Date().getDate() + '/' + (new Date().getMonth()+1)  + '/' + new Date().getFullYear()
+            expect(account.readTransactions()).toEqual([date + ' || 100 || -100']);
         })
     })
 
