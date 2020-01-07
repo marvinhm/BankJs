@@ -1,6 +1,4 @@
-# Bank JS
-
-## Bank Tech Test Self-assessment.
+# Bank Tech Test Self-assessment.
 
 
 ### Requirements
